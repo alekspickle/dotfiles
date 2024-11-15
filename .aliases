@@ -1,5 +1,5 @@
 # pretty xev
-alias xev_pretty="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"
+alias xev-pretty="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"
 
 # Alias for aws command that connects to localstack instead of real AWS server
 alias aws-mock="aws --endpoint-url http://127.0.0.1:4566"
